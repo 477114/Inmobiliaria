@@ -1,0 +1,275 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Botones Enlaces Generales */
+a {
+    color: #0073e6; /* Un azul claro para mayor visibilidad */
+    transition: color 0.3s ease;
+}
+
+a {
+    display: inline-block; /* Hace que el padding sea efectivo y permite centrar mejor */
+    margin: 0 10px; /* Espaciado horizontal entre enlaces */
+    padding: 8px 16px; /* Espaciado interior para hacerlos más clickeables */
+    text-decoration: none; /* Quita el subrayado por defecto */
+    color: #0073e6; /* Color inicial */
+    background-color: #f4f4f4; /* Color de fondo inicial */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s, color 0.3s; /* Transiciones suaves para color y fondo */
+}
+
+a:hover, a:focus {
+    color: #ffffff; /* Color de texto al pasar el mouse o enfocar */
+    background-color: #3498db; /* Color de fondo al pasar el mouse o enfocar */
+    text-decoration: none; /* Asegura que no haya subrayado al pasar el mouse */
+}
+
+/* Centrado de los Enlaces en la Navegación */
+nav {
+    text-align: center; /* Centra los enlaces dentro del <nav> */
+    background-color: #0073e6; /* Fondo para la barra de navegación */
+    padding: 10px 0; /* Padding vertical para la barra de navegación */
+}
+
+a:hover, a:focus {
+    color: #d35400; /* Un color naranja al pasar el mouse o seleccionar */
+    text-decoration: underline;
+}
+/*--------Fin botones Enlaces Generales ------*/
+
+#logo {/*LOGO de Arriba*/
+    display: block;
+    margin: 0 auto;
+    width: 150px; /* Ajusta este valor según el tamaño de tu logo */
+}
+
+/* Estilización del Título y Lema */
+#grupo {
+    text-align: center;
+    background-color: #005691;
+    color: white;
+    padding: 20px 0;
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+/* Navegación */
+nav {
+    background-color: #0073e6;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Formularios */
+form {
+    margin: 20px auto;
+    width: 90%;
+    text-align: center;
+}
+
+select {
+    padding: 10px;
+    margin-top: 5px;
+    width: 50%;
+}
+
+/* Pie de página */
+/*footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}*/
+
+footer {
+    background-color: #2c3e50; /* Un azul oscuro elegante */
+    color: #ecf0f1; /* Un contraste claro para el texto */
+    text-align: center;
+    padding: 20px 10px;
+    font-size: 0.9em;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer li {
+    margin-bottom: 8px;
+}
+
+footer a {
+    color: #ecf0f1;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+<footer id="pie-de-pagina">
+    <ul>
+        <li><a href="https://facebook.com/RamonYTomas" target="_blank">Nos encontraran en Facebook: RamonYTomas</a></li>
+        <li>WhatsApp: 11-6789-2354</li>
+        <li>Email: <a href="mailto:RamonYTomas@gmail.com">RamonYTomas@gmail.com</a></li>
+        <li>Instagram: <a href="https://instagram.com/Ramon@Tomas" target="_blank">Ramon@Tomas</a></li>
+    </ul>
+</footer>
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+/* General Reset and Box Sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern, clean font */
+    color: #333; /* Dark grey for text */
+    background-color: #f4f4f9; /* Lighter grey to soften the page background */
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    background-color: #02457a; /* Dark blue for professionalism */
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header img {
+    max-width: 150px; /* Ensures the logo is not too large */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+nav {
+    padding: 10px 0;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: #0275d8; /* Slightly lighter blue for contrast */
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav a:hover {
+    background-color: #0056b3; /* A darker blue on hover */
+    transform: translateY(-2px); /* Slight raise to indicate selection */
+}
+
+section {
+    background: #ffffff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 90%; /* Responsive width */
+    max-width: 1200px; /* Maximum width */
+}
+
+section h2 {
+    color: #02457a; /* Echoing the header color for consistency */
+    margin-bottom: 20px;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+article img {
+    width: 100%;
+    max-width: 400px; /* Larger images for better display */
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+article p {
+    font-size: 18px; /* Larger font size for better readability */
+    color: #666;
+}
+
+footer {
+    background-color: #02457a;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer li {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #49a6e9;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design Enhancements */
+@media (max-width: 768px) {
+    nav a {
+        display: block; /* Stack links on smaller screens */
+        margin-bottom: 10px;
+    }
+
+    header, section {
+        padding: 10px; /* Less padding on smaller devices */
+    }
+}
+
+#button { /* buton BUSCAR */
+    background-color: #49a6e9; /* Color de fondo verde */
+    color: white; /* Texto en color blanco */
+    padding: 12px 24px; /* Padding alrededor del texto */
+    font-size: 16px; /* Tamaño de la fuente */
+    border: none; /* Sin bordes */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor en forma de mano para indicar que es clickeable */
+    transition: background 0.1s, transform 0.8s; /* Transición suave para los efectos */
+}
+
+#button:hover {
+    background-color: #02457a; /* Color de fondo al pasar el ratón */
+    transform: scale(1.05); /* Ligero aumento de tamaño al pasar el ratón */
+}
