@@ -1,14 +1,16 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ramon Y Tomas Propiedades</title>
     <link rel="stylesheet" href="./casas-css.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script><!--imports jQuery library into your project--> <!--PARA Q FORMULARIOS MUESTRE DIF CASAS O DEPT -->
 </head>
 <body>
     <img src="logo.jpeg" alt="" id="logo">
     <div id="grupo">
-        <h1 id="tittulo">Ramon Y Tomas Propiedades </h1>
+        <h1 id="tittulo">Ramon Y Tomas Propiedades </h1><!--El color de la letra se controla en el css en la seccion body-->
         <h2 id="Lema">Encontrar tu hogar</h2>
     </div>
     <hr>
@@ -16,30 +18,52 @@
         <a href="Casas.html">Casas</a>
         <a href="Departamentos.html">Departamentos</a>
     </header>
-    <div id="alquiler">
-        <h2 id="Alquileres" >Casas en Alquiler</h2>
-        <img id="casa1" src="./casa 1.jpg" alt="">
-        <h4>$150.000 por mes</h4>
-        <img id="casa2" src="./casa 2.jpg" alt="">
-        <h4>$100.000 por mes</h4>
-        <img id="casa3" src="./casa 3.jpg" alt="">
-        <h4>$100.000 por mes</h4>
-        <img id="casa4" src="./casa 4.jpg" alt="">
-        <h4>$120.000 por mes</h4>
-        <img id="casa5" src="./casa 5.jpg" alt="">
-        <h4>$100.000 por mes</h4>
-        <img id="casa6" src="./casa 6.jpg" alt="">
-        <h4>$200.000 por mes</h4>
-        <img id="casa7" src="./casa 7.jpg" alt="">
-        <h4>$100.000 por mes</h4>
-        <img id="casa8" src="casa 8.jpg" alt="">
-        <h4>$100.000 por mes</h4>
-        <img id="casa9" src="casa 9.jpg" alt="">
-        <h4>$100.000 por mes</h4>
-        <img id="casa10" src="casa 10.jpg" alt="">
-        <h4>$100.000 por mes</h4>
+    <div id="alquiler"><!-- El div llamado 'alquiler' crea la caja q engloba a las imagenes de las casas en alquiler-->
+        <h2 id="Alquileres" >Casas en Alquiler</h2><!--titulo d la seccion del div-->
+        <div class="text-container" data-ambientes="3" data-zona="CABA">
+            <img id="casa1" src="./casa 1.jpg" alt="">
+            <h4>$150.000 por mes</h4>
+        </div>
+        <div class="text-container" data-ambientes="2" data-zona="zona norte">
+            <img id="casa2" src="./casa 2.jpg" alt="">
+            <h4>$100.000 por mes</h4>
+        </div>
+        <div class="text-container" data-ambientes="2" data-zona="zona norte">
+            <img id="casa3" src="./casa 3.jpg" alt="">
+            <h4>$100.000 por mes</h4>
+        </div>
+        <div class="text-container" data-ambientes="1" data-zona="zona norte">
+            <img id="casa4" src="./casa 4.jpg" alt="">
+            <h4>$120.000 por mes</h4>
+        </div>
+        <div class="text-container" data-ambientes="2" data-zona="zona sur">
+            <img id="casa5" src="./casa 5.jpg" alt="">
+            <h4>$100.000 por mes</h4>
+        </div>
+        <div class="text-container" data-ambientes="1" data-zona="CABA">
+            <img id="casa6" src="./casa 6.jpg" alt="">
+            <h4>$200.000 por mes</h4>
+        </div>
+        <div class="text-container" data-ambientes="2" data-zona="CABA">
+            <img id="casa7" src="./casa 7.jpg" alt="">
+            <h4>$100.000 por mes</h4>
+        </div>
+        <div class="text-container" data-ambientes="3" data-zona="CABA">
+            <img id="casa8" src="casa 8.jpg" alt="">
+            <h4>$100.000 por mes</h4>
+        </div>
+        <div class="text-container" data-ambientes="2" data-zona="zona oeste">
+            <img id="casa9" src="casa 9.jpg" alt="">
+            <h4>$100.000 por mes</h4>
+        </div>
+        <div class="text-container" data-ambientes="3" data-zona="zona oeste">
+            <img id="casa10" src="casa 10.jpg" alt="">
+            <h4>$100.000 por mes</h4>
+        </div>
     </div>
-    <div id="ventas">
+       
+    
+    <div id="ventas"> <!-- El div llamado 'ventas' crea la caja q engloba a las imagenes de las casas en vnta-->
         <h2 id="casas">Casas en ventas</h2>
         <img src="casa 11.jpg" alt="">
         <h4>$2.000.000 precio</h4>
@@ -62,8 +86,9 @@
         <img src="casa 20.jpg" alt="">
         <h4>$2.000.000 precio</h4>
     </div>
+
     <div id="formulario">
-        <form action="">
+        <form action="#">
             <label id="Ambientes" for="">Ambientes</label>
             <select name="" id="ambientes2"><!--id para CSS-->
                 <option value="">1</option>
@@ -71,7 +96,7 @@
                 <option value="">3</option>
             </select>
         </form>
-        <form action="">
+        <form action="#">
             <label id="zonas" for="">Zonas</label>
             <select name="" id="zonas2">
             <option value="">CABA</option>
@@ -87,9 +112,49 @@
             <li id="facebook">Nos encontraran en facebook: RamonYTomas</li>
             <li id="whattsApp">Nos puede conctactar por whattsApp:11-6789-2354</li>
             <li id="mail3">Por mail como: RamonYTomas@gmail.com</li>
-            <li id="Instragram">Y por Instragram como: Ramon@Tomas</li>
+            <li id="Instragram">Y por Instagram como: Ramon@Tomas</li>
         </ul>
     </div>
-   
+
+    <!--PARA Q FORMULARIOS MUESTRE DIF CASAS O DEPT --><!--PARA Q FORMULARIOS MUESTRE DIF CASAS O DEPT --><!--PARA Q FORMULARIOS MUESTRE DIF CASAS O DEPT --><!--PARA Q FORMULARIOS MUESTRE DIF CASAS O DEPT -->
+    <script>
+        $(document).ready(function() { // Espera a que el documento esté completamente cargado
+            function filterContent() {
+                const selectedAmbientes = $('#ambientes2').val(); // Obtiene el valor seleccionado en el formulario de ambientes
+                const selectedZona = $('#zonas2').val(); // Obtiene el valor seleccionado en el formulario de zonas
+
+                $('.text-container').each(function() { // Itera sobre cada contenedor(text-container) de texto
+                    const containerAmbientes = $(this).data('ambientes'); // Obtiene el valor de ambientes del contenedor (de la casa o dept)
+                    const containerZona = $(this).data('zona'); // Obtiene el valor de zona del contenedor (de la casa o dept)
+                    let showContainer = true;
+
+                    // Usar switch para determinar si mostrar el contenedor
+                    switch (true) {
+                        case selectedAmbientes !== "" && selectedZona !== "":
+                            showContainer = selectedAmbientes == containerAmbientes && selectedZona == containerZona;
+                            break;
+                        case selectedAmbientes !== "":
+                            showContainer = selectedAmbientes == containerAmbientes;
+                            break;
+                        case selectedZona !== "":
+                            showContainer = selectedZona == containerZona;
+                            break;
+                        default:
+                            showContainer = true;
+                    }
+
+                    if (showContainer) { // es abreviado para if(showcontainer=true) el valor se asigna en el switch
+                        $(this).show(); // Muestra el contenedor si coincide
+                    } else {
+                        $(this).hide(); // Oculta el contenedor si no coincide
+                    }
+                });
+            }
+
+            $('#ambientes2').change(filterContent); // Agrega un listener de cambio al select de ambientes
+            $('#zonas2').change(filterContent); // Agrega un listener de cambio al select de zonas
+        });
+    </script>
+    <!--PARA Q FORMULARIOS MUESTRE DIF CASAS O DEPT --><!--PARA Q FORMULARIOS MUESTRE DIF CASAS O DEPT --><!--PARA Q FORMULARIOS MUESTRE DIF CASAS O DEPT --><!--PARA Q FORMULARIOS MUESTRE DIF CASAS O DEPT -->
 </body>
 </html>

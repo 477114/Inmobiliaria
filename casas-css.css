@@ -1,15 +1,37 @@
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    color: #333;
+    color: #000000;/*color d 'Ramon Y Tomas Propiedades' y el lema*/
     line-height: 1.6;
+
+    /*-------------------------------NEW for transparent background-------------------------*/
+    background-image: url('background West Hollywood.png'); /* Ensure the path and extension are correct */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
 }
 
-img {
-    width: 100%;
+#logo{/*Change logo size*/
+    width: 100%;/*cambiar tamano aca*/
     height: auto;
     display: block;
     margin-bottom: 10px;
+}
+
+img { /*Change image size*/
+    /*  ORIGINAL
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;*/
+
+    width: 25%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+
 }
 
 a {/*-----Botones Enlaces Gnerales----*/
@@ -59,7 +81,7 @@ header a {
     font-size: 18px;
 }
 
-#grupo h1, #grupo h2 {
+#grupo h1, #grupo h2 { /* el titulo esta en el #grupo si cambias esto cambias el 'Ramon Y Tomas Propiedades' y el lema*/
     text-align: center;
     margin-top: 0;
 }
@@ -75,13 +97,18 @@ hr {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    /*-------------------------------NEW for transparent background-------------------------*/
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    backdrop-filter: blur(10px); /* Applies the blur effect */
+    padding: 20px;
+    border-radius: 10px;
 }
 
 #alquiler h2, #ventas h2 {
-    color: #007bff;
+    color: #007bff; /*Cntrla el color del titulo de las DIVs de alquilr y Vnta*/
 }
 
-h4 {
+h4 {/*todo lo que esta escrito con tamano h4*/
     margin: 5px 0;
     color: #666;
     font-weight: normal;
